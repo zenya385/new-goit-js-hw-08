@@ -6,4 +6,4 @@ var t=arguments[3],n="Expected a function",e=NaN,i="[object Symbol]",r=/^\s+|\s+
 },{}],"TTyb":[function(require,module,exports) {
 "use strict";var e=t(require("lodash.throttle"));function t(e){return e&&e.__esModule?e:{default:e}}require("../css/common.css"),require("../css/03-feedback.css");const r="feedback-form-state",a={},o={form:document.querySelector(".feedback-form"),input:document.querySelector("input"),textareaPas:document.querySelector(".feedback-form textarea")};function n(e){e.preventDefault(),e.target.reset(),localStorage.removeItem(r)}function c(e){const t=e.target.value;localStorage.setItem(r,t)}function u(){const e=localStorage.getItem(r);e&&(o.textareaPas.value=e)}o.form.addEventListener("submit",n),o.textareaPas.addEventListener("input",(0,e.default)(c,500)),o.form.addEventListener("input",e=>{a[e.target.name]=e.target.value,console.log(a)}),u();
 },{"lodash.throttle":"FNyO","../css/common.css":"en75","../css/03-feedback.css":"en75"}]},{},["TTyb"], null)
-//# sourceMappingURL=/new-goit-js-hw-09/03-feedback.6e2e7ae6.js.map
+//# sourceMappingURL=/new-goit-js-hw-08/03-feedback.6e2e7ae6.js.map
